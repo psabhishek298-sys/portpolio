@@ -16,7 +16,7 @@ export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
   const [errorText, setErrorText] = useState("");
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setErrorText("");
 
@@ -25,14 +25,32 @@ export default function Contact() {
       return;
     }
 
-    // Capture response, simulate transmission encryption
-    setSubmitted(true);
-    // Silent success trigger
+    try {
+      const url = "https://docs.google.com/forms/d/e/1FAIpQLSezBNqBS9hW_x9BPt_TUrL6sGPSWigIyqhiv-HwjnEyvUFR0g/formResponse";
+      const submitData = new URLSearchParams();
+      submitData.append("entry.791010536", formData.name);
+      submitData.append("entry.92207286", formData.email);
+      submitData.append("entry.120803320", formData.subject);
+      submitData.append("entry.1441589256", formData.message);
+
+      await fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded"
+        },
+        body: submitData.toString()
+      });
+
+      setSubmitted(true);
+    } catch (err) {
+      setErrorText("Transmission failed. Please try again later.");
+    }
   };
 
   return (
-    <section id="contact" className="relative py-24 md:py-32 border-t border-neutral-100 dark:border-neutral-900 transition-colors">
-      <div className="pointer-events-none absolute inset-0 cyber-grid-dense opacity-30" />
+    <section id="contact" className="relative py-24 md:py-32 border-t border-neutral-100 dark:border-neutral-900 transition-colors" aria-label="Contact Abhishek P S">
+      <div className="pointer-events-none absolute inset-0 cyber-grid-dense opacity-30" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         
@@ -44,7 +62,10 @@ export default function Contact() {
           <h2 className="font-display text-4xl font-extrabold tracking-tight text-neutral-900 sm:text-5xl dark:text-white">
             Get In Touch
           </h2>
-          <div className="h-1 w-20 bg-emerald-500 mt-4 rounded-full" />
+          <p className="mt-3 text-sm text-neutral-500 dark:text-neutral-400 font-sans max-w-xl">
+            Have a project idea, freelance opportunity, or just want to connect? Reach out to Abhishek P S — Web Developer and Cybersecurity Enthusiast based in Kozhikode, Kerala.
+          </p>
+          <div className="h-1 w-20 bg-emerald-500 mt-4 rounded-full" aria-hidden="true" />
         </div>
 
         {/* Form and info row split */}
@@ -92,9 +113,9 @@ export default function Contact() {
               <span className="font-mono text-[10px] text-neutral-400 dark:text-neutral-500 uppercase pl-1">Grid reference logs</span>
               <div className="flex items-center gap-4 pl-1">
                 <a 
-                  href="https://github.com/sortex911" 
+                  href="https://github.com/psabhishek298-sys" 
                   target="_blank" 
-                  rel="noreferrer" 
+                  rel="noopener noreferrer" 
                   className="rounded-lg bg-neutral-100 p-2 text-neutral-700 hover:bg-neutral-200 dark:bg-neutral-800/40 dark:text-neutral-300 dark:hover:bg-neutral-800 hover:text-emerald-500 transition-colors cursor-pointer"
                   title="GitHub Source"
                 >

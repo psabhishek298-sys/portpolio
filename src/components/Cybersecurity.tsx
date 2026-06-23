@@ -84,8 +84,8 @@ export default function Cybersecurity() {
   };
 
   return (
-    <section id="security" className="relative py-24 md:py-32 border-t border-neutral-100 dark:border-neutral-900 bg-neutral-100/10 dark:bg-black/20 transition-colors">
-      <div className="pointer-events-none absolute inset-0 cyber-grid-dense opacity-30" />
+    <section id="security" className="relative py-24 md:py-32 border-t border-neutral-100 dark:border-neutral-900 bg-neutral-100/10 dark:bg-black/20 transition-colors" aria-label="Cybersecurity Skills and Knowledge">
+      <div className="pointer-events-none absolute inset-0 cyber-grid-dense opacity-30" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         

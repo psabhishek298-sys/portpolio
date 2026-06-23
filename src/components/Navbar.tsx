@@ -42,7 +42,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-neutral-200/60 bg-white/70 backdrop-blur-md transition-colors dark:border-neutral-800/60 dark:bg-[#0a0a0c]/85">
+    <header className="sticky top-0 z-40 w-full border-b border-neutral-200/60 bg-white/70 backdrop-blur-md transition-colors dark:border-neutral-800/60 dark:bg-[#0a0a0c]/85" role="banner" aria-label="Abhishek P S Portfolio Navigation">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 md:px-8">
         
         {/* Terminal path selector */}
@@ -83,7 +83,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         <div className="flex items-center gap-4">
           
           {/* Quick anchor icons */}
-          <nav className="flex items-center gap-3">
+          <nav className="flex items-center gap-3" aria-label="Section navigation">
             <button
               id="nav-btn-work"
               onClick={() => scrollToSection("work", "cd ~/work")}

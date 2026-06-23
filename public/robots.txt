@@ -1,0 +1,14 @@
+# robots.txt for abhishekps.online
+# Abhishek P S Portfolio — Web Developer & Cybersecurity Enthusiast
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://abhishekps.online/sitemap.xml
+
+# Block crawlers from build artifacts
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /src/
+Disallow: /assets/.aistudio/

@@ -1,0 +1,21 @@
+{
+  "name": "Abhishek P S — Web Developer & Cybersecurity Enthusiast",
+  "short_name": "Abhishek PS",
+  "description": "Portfolio of Abhishek P S — BCA Student at Sree Gokulam Arts and Science College, Balussery. Web Developer, React Developer, App Developer and Cybersecurity Enthusiast from Kozhikode, Kerala.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#10b981",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["portfolio", "developer", "technology"],
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

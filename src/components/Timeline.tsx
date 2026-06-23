@@ -47,8 +47,8 @@ export default function Timeline() {
   ];
 
   return (
-    <section id="journey" className="relative py-24 md:py-32">
-      <div className="pointer-events-none absolute inset-0 cyber-grid opacity-60" />
+    <section id="journey" className="relative py-24 md:py-32" aria-label="Professional Journey Timeline">
+      <div className="pointer-events-none absolute inset-0 cyber-grid opacity-60" aria-hidden="true" />
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         
