@@ -61,7 +61,7 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
           >
             <span className="text-neutral-400 dark:text-neutral-500">$ user.description_</span>
-            <div className="overflow-hidden rounded-xl border border-neutral-200/65 bg-neutral-50/50 p-4 dark:border-neutral-800/80 dark:bg-black/40 glass-panel">
+            <div className="overflow-hidden">
               <pre className="text-neutral-700 dark:text-neutral-300 overflow-x-auto">
                 <code className="text-blue-600 dark:text-emerald-400">const</code>{" "}
                 <code className="text-indigo-600 dark:text-indigo-300">profile</code> = {"{"}

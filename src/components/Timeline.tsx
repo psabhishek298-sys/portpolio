@@ -98,12 +98,12 @@ export default function Timeline() {
                 <div key={idx} className="relative group">
                   
                   {/* Timeline circular node decorator */}
-                  <div className="absolute -left-[31px] md:-left-[37px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full border border-emerald-500 bg-white dark:bg-[#0b0b0e] group-hover:scale-110 transition-transform shadow-xs">
+                  <div className="absolute -left-[31px] md:-left-[37px] top-1.5 flex h-4 w-4 items-center justify-center rounded-full border border-emerald-500 bg-white dark:bg-[#0b0b0e] transition-transform shadow-xs">
                     <div className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   </div>
 
                   {/* Card Block */}
-                  <div className="rounded-xl border border-neutral-100 hover:border-emerald-500/30 bg-neutral-50/20 p-5 md:p-6 transition-all hover:bg-neutral-50/50 dark:border-neutral-900 dark:hover:border-emerald-500/20 dark:bg-black/10 select-none">
+                  <div className="rounded-xl border border-neutral-100 bg-neutral-50/20 p-5 md:p-6 transition-all dark:border-neutral-900 dark:bg-black/10 select-none">
                     
                     {/* Header line */}
                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
@@ -111,7 +111,7 @@ export default function Timeline() {
                         <span className="rounded-md bg-amber-500/10 px-2.5 py-1 text-xs font-bold text-amber-500 dark:bg-amber-500/15">
                           {item.year}
                         </span>
-                        <h3 className="text-sm sm:text-base font-bold text-neutral-900 group-hover:text-emerald-500 transition-colors dark:text-white">
+                        <h3 className="text-sm sm:text-base font-bold text-neutral-900 transition-colors dark:text-white">
                           {item.title}
                         </h3>
                       </div>

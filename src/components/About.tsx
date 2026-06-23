@@ -60,7 +60,7 @@ export default function About() {
             </p>
             
             <div className="flex flex-wrap gap-2 pt-4">
-              {["Cybersecurity", "React", "Flutter", "Python", "Linux", "Ethical Hacking"].map((badge, idx) => (
+              {["Cybersecurity", "Web Development", "Flutter", "Python", "Linux", "Ethical Hacking","Java","Sql","App Development","vibe coding"].map((badge, idx) => (
                 <span 
                   key={idx}
                   className="rounded-full bg-neutral-100 px-3.5 py-1 text-xs font-mono font-medium text-neutral-600 dark:bg-neutral-800/40 dark:text-neutral-300 border border-neutral-200/50 dark:border-neutral-800/60 shadow-xs"
