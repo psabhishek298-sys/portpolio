@@ -65,16 +65,16 @@ export default function About() {
             </p>
 
             <p className="text-base sm:text-lg leading-relaxed font-light">
-              As a dedicated <strong className="font-medium text-emerald-500">Web Developer</strong>, <strong className="font-medium text-emerald-500">React Developer</strong>, and <strong className="font-medium text-emerald-500">App Developer</strong> from <strong>Kozhikode (Calicut), Kerala</strong>, Abhishek specializes in building high-performance web applications, cross-platform mobile apps, and automated cybersecurity reconnaissance tools.
+              As a dedicated <strong className="font-medium text-emerald-500">Web Developer</strong>, <strong className="font-medium text-emerald-500">React Developer</strong>, and <strong className="font-medium text-emerald-500">App Developer</strong> from <strong>Kozhikode (Calicut), Kerala</strong>, I specialize in building high-performance web applications, cross-platform mobile apps, and innovative digital solutions that focus on performance, scalability, and user experience.
             </p>
 
             <p className="text-base sm:text-lg leading-relaxed font-light">
-              With a growing expertise in <strong className="font-medium text-emerald-500">Cybersecurity</strong> and <strong className="font-medium text-emerald-500">Ethical Hacking</strong>, he combines frontend development skills with security awareness — probing network configurations, auditing web vulnerabilities (OWASP Top 10), and automating subdomain intelligence scanners using Python and Linux.
+              Alongside development, I have a strong interest in <strong className="font-medium text-emerald-500">Cybersecurity</strong> and <strong className="font-medium text-emerald-500">Ethical Hacking</strong>. I enjoy exploring web security concepts, analyzing network configurations, identifying vulnerabilities, and creating automation tools using Python and Linux to enhance security research and reconnaissance workflows.
             </p>
 
-            <p className="text-base sm:text-lg leading-relaxed font-light">
-              His project portfolio includes finance tracking apps, business websites, music streaming platforms, academic management systems, and domain leak intelligence scanners — all built while pursuing his BCA degree at Sree Gokulam College Balussery.
-            </p>
+<p className="text-base sm:text-lg leading-relaxed font-light">
+  My portfolio includes finance tracking applications, business websites, music streaming platforms, academic management systems, and cybersecurity-focused tools. Each project reflects my passion for technology, continuous learning, and commitment to building impactful solutions while pursuing my BCA degree at Sree Gokulam Arts and Science College, Balussery.
+</p>
             
             {/* Skills badges */}
             <div className="flex flex-col gap-4 pt-4">
