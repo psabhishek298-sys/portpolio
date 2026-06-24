@@ -119,7 +119,7 @@ export default function App() {
           {/* Bottom bar */}
           <div className="border-t border-neutral-200/40 dark:border-neutral-900/60 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 font-mono text-xs text-neutral-400">
             <span className="text-neutral-500 dark:text-neutral-500">
-              &copy; {new Date().getFullYear()} Abhishek P S. All rights reserved. Built with React + Vite from Kerala, India.
+              &copy; {new Date().getFullYear()} Abhishek P S. All rights reserved. 
             </span>
             <span className="text-emerald-500 font-medium">
               $ status_check // system_active // build_complete

@@ -40,7 +40,7 @@ export default function Hero() {
             >
               <span className="animate-pulse font-bold" aria-hidden="true">&gt;</span>
               <span className="border-r-2 border-emerald-500 pr-1 cursor-blink">
-                Web Developer | App Developer | Cybersecurity Enthusiast
+                Founder of Truquen | Full Stack Developer | Cybersecurity Enthusiast
               </span>
             </motion.p>
           </div>

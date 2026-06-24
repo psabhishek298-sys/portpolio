@@ -180,49 +180,49 @@ export default function Contact() {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div className="flex flex-col gap-1.5 font-mono">
-                    <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Sender Name:</label>
+                    <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Name:</label>
                     <input 
                       type="text"
                       value={formData.name}
                       onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                       required
-                      placeholder="e.g. Eliot Alderson"
+                      placeholder="Your Name"
                       className="rounded-lg border border-neutral-200 p-2.5 bg-neutral-50/50 dark:border-neutral-800 dark:bg-black/40 text-neutral-900 dark:text-white focus:outline-none focus:border-emerald-500/50"
                     />
                   </div>
 
                   <div className="flex flex-col gap-1.5 font-mono">
-                    <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Email Destination:</label>
+                    <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Email:</label>
                     <input 
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       required
-                      placeholder="e.g. eliot@fsociety.org"
+                      placeholder="Your Email"
                       className="rounded-lg border border-neutral-200 p-2.5 bg-neutral-50/50 dark:border-neutral-800 dark:bg-black/40 text-neutral-900 dark:text-white focus:outline-none focus:border-emerald-500/50"
                     />
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-1.5 font-mono">
-                  <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Subject Flag:</label>
+                  <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Subject:</label>
                   <input 
                     type="text"
                     value={formData.subject}
                     onChange={(e) => setFormData({ ...formData, subject: e.target.value })}
-                    placeholder="e.g. Security Vulnerability Advisory"
+                    placeholder="Subject"
                     className="rounded-lg border border-neutral-200 p-2.5 bg-neutral-50/50 dark:border-neutral-800 dark:bg-black/40 text-neutral-900 dark:text-white focus:outline-none focus:border-emerald-500/50"
                   />
                 </div>
 
                 <div className="flex flex-col gap-1.5 font-mono">
-                  <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Packet Payload (Message):</label>
+                  <label className="text-[11px] text-neutral-400 dark:text-neutral-500 pl-1 uppercase font-semibold">Message:</label>
                   <textarea 
                     rows={4}
                     value={formData.message}
                     onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                     required
-                    placeholder="Provide detailed description or enquiry criteria..."
+                    placeholder="Message"
                     className="rounded-lg border border-neutral-200 p-2.5 bg-neutral-50/50 dark:border-neutral-800 dark:bg-black/40 text-neutral-900 dark:text-white focus:outline-none focus:border-emerald-500/50 font-sans"
                   />
                 </div>

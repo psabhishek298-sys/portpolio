@@ -43,6 +43,12 @@ export default function Timeline() {
       role: "Advanced Scalability & Threat Intelligence",
       description: "Integrating complex relational database schemas with high-fidelity frontends. Designing automated vulnerability scanners in Python, building custom secure API backends, and refining devops structures.",
       technologies: ["Full Stack", "TypeScript", "Drizzle / Prisma", "API Security", "Defense in Depth"]
+    },
+    {
+      year: "2026",
+      title: "Founded a Startup Company",
+      role: "Founder & CEO - Truquen",
+      description: "Established Truquen, a technology startup specializing in web development, mobile app development, and custom software solutions. Focused on delivering innovative digital products and helping businesses grow through technology.",
     }
   ];
 

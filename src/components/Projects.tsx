@@ -26,20 +26,6 @@ export default function Projects() {
       githubUrl: "https://github.com/psabhishek298-sys"
     },
     {
-      id: "green-realm",
-      title: "Green Realm Landscape — Business Website",
-      description: "Green Realm Landscape is a premium landscaping business website built for a professional landscaping and outdoor design firm in Kerala. The website showcases landscape architecture services, garden design portfolios, terrace garden solutions, and sustainable ecosystem projects. Built with React and modern UI frameworks, it features responsive design, service showcase sections, and client inquiry forms.",
-      features: [
-        "Professional Landscaping Service Showcase",
-        "Responsive Portfolio Gallery for completed projects",
-        "Client Inquiry and Contact Form Integration",
-        "SEO-Optimized Content for Local Business Visibility",
-        "Modern Dark-Themed Premium UI Design"
-      ],
-      tech: ["React", "TypeScript", "Tailwind CSS", "Supabase", "Firebase"],
-      githubUrl: "https://github.com/psabhishek298-sys"
-    },
-    {
       id: "music-corner",
       title: "Music Corner — Music Streaming Application",
       description: "Music Corner is an elegant, lightweight music streaming and storage application built with Flutter and Dart. It supports playlist configuration, dynamic cloud storage feeds, smooth audio rendering, and seamless YouTube integration for online search. Designed for both casual listeners and music enthusiasts who want a clean, fast music experience on mobile.",
