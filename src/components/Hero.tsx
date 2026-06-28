@@ -45,7 +45,7 @@ export default function Hero() {
             $ user.role
           </span>
           <h1 className="font-display text-4xl font-extrabold tracking-tight text-white leading-[1.1]">
-            Abhishek<br />P S
+            Abhishek PS
           </h1>
           <p className="flex items-center gap-1.5 font-mono text-[11px] font-medium text-emerald-400 mt-0.5">
             <span className="animate-pulse font-bold" aria-hidden="true">&gt;</span>
