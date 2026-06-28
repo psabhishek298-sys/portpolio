@@ -8,8 +8,11 @@ import { Github, Linkedin, Instagram, ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="hero" className="relative flex min-h-[92vh] w-full items-center justify-center py-10 md:py-16" aria-label="Hero section — Abhishek P S Portfolio">
-
+    <section
+      id="hero"
+      className="relative flex min-h-[92vh] w-full items-center justify-center py-10 md:py-16"
+      aria-label="Hero section — Abhishek P S Portfolio"
+    >
       {/* Background image */}
       <img
         src="/heroimg/hbg.webp"
@@ -17,13 +20,123 @@ export default function Hero() {
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 h-full w-full object-cover"
       />
-    
 
       {/* Decorative cyber grid layers */}
       <div className="pointer-events-none absolute inset-0 cyber-grid opacity-80" aria-hidden="true" />
       <div className="pointer-events-none absolute right-1/4 top-1/4 h-72 w-72 rounded-full bg-emerald-500/5 blur-3xl" aria-hidden="true" />
 
-      <div className="relative mx-auto grid max-w-7xl w-full grid-cols-1 items-center gap-10 px-4 sm:px-6 md:grid-cols-12 md:px-8">
+      {/* ═══════════════════════════════
+          MOBILE LAYOUT  (< md)
+      ════════════════════════════════ */}
+      <div className="md:hidden relative w-full px-4 py-6 flex flex-col gap-5">
+
+        {/* Glow accents */}
+        <div className="pointer-events-none absolute -top-16 -right-16 h-52 w-52 rounded-full bg-emerald-500/15 blur-3xl" aria-hidden="true" />
+        <div className="pointer-events-none absolute bottom-0 -left-10 h-40 w-40 rounded-full bg-emerald-500/10 blur-2xl" aria-hidden="true" />
+
+        {/* ── Name & role ── */}
+        <motion.div
+          className="flex flex-col gap-1.5"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+        >
+          <span className="font-mono text-[10px] tracking-[0.18em] text-emerald-500/70 uppercase">
+            $ user.role
+          </span>
+          <h1 className="font-display text-4xl font-extrabold tracking-tight text-white leading-[1.1]">
+            Abhishek<br />P S
+          </h1>
+          <p className="flex items-center gap-1.5 font-mono text-[11px] font-medium text-emerald-400 mt-0.5">
+            <span className="animate-pulse font-bold" aria-hidden="true">&gt;</span>
+            <span className="border-r-2 border-emerald-500 pr-1 cursor-blink leading-relaxed">
+              Founder of Truquen | Full Stack Developer | Cybersecurity Enthusiast
+            </span>
+          </p>
+        </motion.div>
+
+        {/* ── Profile description ── */}
+        <motion.div
+          className="flex flex-col gap-1 font-mono text-[10px]"
+          initial={{ opacity: 0, y: 25 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2, duration: 0.5 }}
+        >
+          <span className="text-neutral-500">$ user.description_</span>
+          <pre className="text-neutral-300 text-[10px] leading-[1.7] whitespace-pre-wrap break-words">
+            <code className="text-emerald-400">const</code>{" "}
+            <code className="text-indigo-300">profile</code> = {"{\n"}
+            {"  "}name : <code className="text-amber-300">"Abhishek P S"</code>,{"\n"}
+            {"  "}role : <code className="text-amber-300">"Web Dev & Cybersecurity"</code>,{"\n"}
+            {"  "}college : <code className="text-amber-300">"Sree Gokulam, Balussery"</code>,{"\n"}
+            {"  "}location : <code className="text-amber-300">"Kozhikode, Kerala"</code>,{"\n"}
+            {"  "}stack : [<code className="text-pink-300">"React"</code>, <code className="text-emerald-400">"Flutter"</code>, <code className="text-teal-300">"Python"</code>]{"\n"}
+            {"}"}
+          </pre>
+        </motion.div>
+
+        {/* ── Summary ── */}
+        <motion.div
+          className="flex flex-col gap-1 font-mono text-[10px]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
+        >
+          <span className="text-neutral-500">$ cat user.summary_</span>
+          <div className="border-l-2 border-emerald-500/40 pl-3 flex flex-col gap-1 font-sans text-[11px] text-neutral-400 leading-relaxed">
+            <span className="text-neutral-600 font-mono text-[9px]"># output:</span>
+            <p>🎓 BCA Student at <strong className="text-neutral-200">Sree Gokulam Arts & Science College</strong></p>
+            <p>🛡️ Passionate about Cybersecurity, Ethical Hacking & Linux</p>
+            <p>💻 Building web apps, mobile apps & security tools</p>
+            <p>📍 <strong className="text-neutral-200">Kozhikode (Calicut), Kerala, India</strong></p>
+          </div>
+        </motion.div>
+
+        {/* ── Social links + CTA ── */}
+        <motion.nav
+          className="flex flex-col gap-3"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
+          aria-label="Social media links"
+        >
+          <span className="font-mono text-[10px] text-neutral-500">$ user.socials_</span>
+          <div className="flex items-center gap-3">
+            {[
+              { href: "https://github.com/psabhishek298-sys", label: "GitHub", icon: <Github className="h-5 w-5" /> },
+              { href: "https://www.linkedin.com/in/abhishek-ps-788431415/", label: "LinkedIn", icon: <Linkedin className="h-5 w-5" /> },
+              { href: "https://www.instagram.com/abhiiyeee.__/", label: "Instagram", icon: <Instagram className="h-5 w-5" /> },
+            ].map(({ href, label, icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={`Abhishek P S on ${label}`}
+                className="flex h-10 w-10 items-center justify-center rounded-xl border border-emerald-500/20 bg-black/50 text-neutral-300 backdrop-blur-md transition-all hover:border-emerald-500/60 hover:text-emerald-400 hover:shadow-[0_0_14px_rgba(16,185,129,0.3)] active:scale-95"
+              >
+                {icon}
+              </a>
+            ))}
+            <button
+              onClick={() => {
+                const el = document.getElementById("contact");
+                if (el) el.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="ml-auto flex items-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-500/15 px-4 py-2.5 font-mono text-[11px] font-semibold text-emerald-400 backdrop-blur-md transition-all hover:bg-emerald-500/25 hover:shadow-[0_0_20px_rgba(16,185,129,0.25)] active:scale-95"
+            >
+              Initiate Secure Comm
+              <ArrowRight className="h-3.5 w-3.5" />
+            </button>
+          </div>
+        </motion.nav>
+      </div>
+
+      {/* ═══════════════════════════════
+          DESKTOP LAYOUT  (≥ md)
+          Original layout — untouched
+      ════════════════════════════════ */}
+      <div className="hidden md:grid relative mx-auto max-w-7xl w-full grid-cols-1 items-center gap-10 px-4 sm:px-6 md:grid-cols-12 md:px-8">
 
         {/* Left Side: Modern Interactive Info Pane */}
         <div id="hero-profile-info" className="flex flex-col justify-center gap-6 md:col-span-12">
